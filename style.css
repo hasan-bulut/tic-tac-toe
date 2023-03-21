@@ -1,0 +1,83 @@
+:root {
+  --block-size: 9rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(230, 230, 230);
+  text-align: center;
+  font-family: 'Indie Flower', 'Comic Sans', cursive;
+  background-image: url("image/black-chalk.jpg");
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 5px solid white;
+  width: var(--block-size);
+  height: var(--block-size);
+}
+
+.x {
+  color: darksalmon;
+  position: relative;
+  top: -8px;
+  font-size: 5.2em;
+  cursor: default;
+}
+
+.o {
+  color: aquamarine;
+  position: relative;
+  top: -7px;
+  font-size: 5.2em;
+  cursor: default;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-image: url("image/black-chalk.jpg");
+  margin: 15% auto;
+  padding: 20px;
+  border: 5px white;
+  border-style: dashed;
+  width: 40%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2.5rem;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

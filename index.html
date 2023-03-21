@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>Tic-Tac-Toe</h1>
+    <table>
+      <tbody>
+        <tr>
+          <td id="td0" onclick="draw(0)">&nbsp;</td>
+          <td id="td1" onclick="draw(1)">&nbsp;</td>
+          <td id="td2" onclick="draw(2)">&nbsp;</td>
+        </tr>
+        <tr>
+          <td id="td3" onclick="draw(3)">&nbsp;</td>
+          <td id="td4" onclick="draw(4)">&nbsp;</td>
+          <td id="td5" onclick="draw(5)">&nbsp;</td>
+        </tr>
+        <tr>
+          <td id="td6" onclick="draw(6)">&nbsp;</td>
+          <td id="td7" onclick="draw(7)">&nbsp;</td>
+          <td id="td8" onclick="draw(8)">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="winner"></p>
+      </div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
